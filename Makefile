@@ -3,4 +3,4 @@ mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 
 test:
 	@echo "Testing all services"
-	@find ./*/ -iname 'Makefile' -not -path '*node_modules*' -not -path './archive/*' -execdir make test \;
+	@find ./*/ -iname 'Makefile' -not -path '*node_modules*' -not -path './archive/*' -execdir make test-local \;
